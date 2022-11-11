@@ -10,6 +10,10 @@
 #include <execinfo.h>
 #endif
 
+#ifdef __APPLE__
+#include <execinfo.h>
+#endif
+
 #include <float.h>
 
 const char *GAppName = "altrace_record";

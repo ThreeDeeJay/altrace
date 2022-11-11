@@ -17,6 +17,10 @@
 #include <unistd.h>
 #endif
 
+#ifdef __APPLE__
+#include <unistd.h>
+#endif
+
 #include <stdarg.h>
 #include <sys/types.h>
 #include <sys/stat.h>

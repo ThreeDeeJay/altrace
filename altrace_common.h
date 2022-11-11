@@ -24,7 +24,15 @@
 #include <stdarg.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+
+#ifdef __linux__
 #include <sys/time.h>
+#endif
+
+#ifdef __APPLE__
+#include <sys/time.h>
+#endif
+
 #include <fcntl.h>
 #include <pthread.h>
 #include <dlfcn.h>

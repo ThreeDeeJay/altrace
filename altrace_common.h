@@ -34,7 +34,15 @@
 #endif
 
 #include <fcntl.h>
+
+#ifdef __linux__
 #include <pthread.h>
+#endif
+
+#ifdef __APPLE__
+#include <pthread.h>
+#endif
+
 #include <dlfcn.h>
 #include <errno.h>
 #include <time.h>

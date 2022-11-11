@@ -6,7 +6,10 @@
  *  This file written by Ryan C. Gordon.
  */
 
+#ifdef __linux__
 #include <execinfo.h>
+#endif
+
 #include <float.h>
 
 const char *GAppName = "altrace_record";

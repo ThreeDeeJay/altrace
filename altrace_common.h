@@ -43,7 +43,14 @@
 #include <pthread.h>
 #endif
 
+#ifdef __linux__
 #include <dlfcn.h>
+#endif
+
+#ifdef __APPLE__
+#include <dlfcn.h>
+#endif
+
 #include <errno.h>
 #include <time.h>
 #include <stdint.h>
